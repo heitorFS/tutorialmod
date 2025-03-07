@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:potato",
+        "tutorialmod:tomato",
+        "minecraft:cooked_chicken",
+        "tutorialmod:mustard",
+        "tutorialmod:rice"
+    ],
+    "result": {
+        "id": "tutorialmod:strogonoff",
+        "count": 1
+    }
+}
