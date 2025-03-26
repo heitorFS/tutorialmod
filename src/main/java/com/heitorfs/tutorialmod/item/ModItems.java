@@ -14,12 +14,12 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModItems {
-    private static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", Item::new, new Item.Settings());
-    private static final Item PINK_GARNET = registerItem("pink_garnet", Item::new, new Item.Settings());
-    private static final Item RICE = registerItem("rice", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(4).saturationModifier(1).build()));
-    private static final Item TOMATO = registerItem("tomato", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(2).saturationModifier(2.5f).build()));
-    private static final Item MUSTARD = registerItem("mustard", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(1).build()));
-    private static final Item STROGONOFF = registerItem("strogonoff", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(12).saturationModifier(14).build()));
+    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", Item::new, new Item.Settings());
+    public static final Item PINK_GARNET = registerItem("pink_garnet", Item::new, new Item.Settings());
+    public static final Item RICE = registerItem("rice", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(4).saturationModifier(1).build()));
+    public static final Item TOMATO = registerItem("tomato", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(2).saturationModifier(2.5f).build()));
+    public static final Item MUSTARD = registerItem("mustard", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(1).build()));
+    public static final Item STROGONOFF = registerItem("strogonoff", Item::new, new Item.Settings().food(new FoodComponent.Builder().nutrition(12).saturationModifier(14).build()));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, name));

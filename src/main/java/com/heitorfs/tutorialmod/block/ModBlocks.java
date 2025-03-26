@@ -17,12 +17,12 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
-    private static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
+    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
                                                                 Block::new,
                                                                 AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_BLOCK),
                                                                 true);
 
-    private static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
+    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
                                                                 Block::new,
                                                                 AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE),
                                                                 true);
